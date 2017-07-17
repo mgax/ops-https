@@ -1,1 +1,4 @@
+/accounts
+/acme-challenge
+/certs
 /nginx/dhparams.pem
