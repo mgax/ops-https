@@ -1,0 +1,9 @@
+WELLKNOWN=/opt/ops/https/acme-challenge
+#!/bin/bash
+set -e
+
+# usage: ./bin/acme foo.example.com
+
+cd /opt/ops/https
+set -x
+exec libexec/letsencrypt.sh -f letsencrypt.conf -c -d "$@"
